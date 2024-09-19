@@ -62,6 +62,7 @@ fun MainScreen(context: Context) {
     // Блокирует основной поток, поэтому нужно создавать в корутине
     val coroutineScope = rememberCoroutineScope()
     val snackbarHostState = SnackbarHostState()
+
     val drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
     ModalNavigationDrawer(
         drawerState = drawerState,
